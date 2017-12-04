@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Список задач</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Список задач</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+    </div>
+
+    <div id="todo">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Список задач</h3>
+          </div>
+          <div class="panel-body">
+              <p><b>Введите задачу через запятую</b><br>
+                <input class ="fieldWithText" type="text" size="40">
+               </p>
+            <div class="insertTask">Задачи: </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button class="btn-getList" type="button">Получить задачу но номеру</button><br>
+      <button class="btn-setList" type="button">Создать задачу</button><br>
+      <button class="btn-deleteByTime" type="button">Удалить задачи срок которых истек</button><br>
+      <button class="btn-deleteBySelected" type="button">Удалить задачу по номеру</button><br>
+      <button class="btn-changeList" type="button">Изменить задачу по номеру</button><br>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
